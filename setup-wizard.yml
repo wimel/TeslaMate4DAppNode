@@ -1,0 +1,11 @@
+version: "2"
+fields:
+  - id: ENCRYPTION_KEY
+    target:
+      type: environment
+      name: ENCRYPTION_KEY
+      service: teslamate
+    title: Encryption key
+    maxLength: 32
+    description: >-
+      To generate your encryption keys read the documentation on [teslamate](https://docs.teslamate.org/docs/faq/#how-to-generate-your-own-tokens), or download the binaries on [adriankumpf repo](https://github.com/adriankumpf/tesla_auth).
