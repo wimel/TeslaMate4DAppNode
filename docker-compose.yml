@@ -1,9 +1,5 @@
 version: "3.5"
 services:
-  teslamatedappnode.public.dappnode.eth:
-    build: .
-    image: "teslamatedappnode.public.dappnode.eth:0.1.1"
-    restart: unless-stopped
   teslamate:
     image: "teslamate/teslamate:latest"
     restart: always
@@ -14,18 +10,14 @@ services:
       - DATABASE_NAME=teslamate
       - DATABASE_HOST=database
       - MQTT_HOST=mosquitto
-    ports:
-      - "4000:4000"
     volumes:
       - "tesla_data:/opt/app/import"
-    cap_drop:
-      - all
   database:
     image: "postgres:14"
     restart: always
     environment:
       - POSTGRES_USER=teslamate
-      - POSTGRES_PASSWORD=teslamate
+      - POSTGRES_PASSWORD=
       - POSTGRES_DB=teslamate
     volumes:
       - "teslamate-db:/var/lib/postgresql/data"
@@ -34,11 +26,9 @@ services:
     restart: always
     environment:
       - DATABASE_USER=teslamate
-      - DATABASE_PASS=teslamate
+      - DATABASE_PASS=
       - DATABASE_NAME=teslamate
       - DATABASE_HOST=database
-    ports:
-      - "3000:3000"
     volumes:
       - "teslamate-grafana-data:/var/lib/grafana"
   mosquitto:

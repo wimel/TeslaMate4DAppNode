@@ -1,14 +1,14 @@
 {
   "name": "teslamatedappnode.public.dappnode.eth",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "A powerful, self-hosted data logger for your Tesla. Kudos for @adriankumpf more info on https://github.com/adriankumpf/teslamate",
   "type": "service",
   "author": "wimel",
   "categories": ["Developer tools"],
   "links": {
-    "homepage": "http://172.17.0.1:4000",
-    "grafana": "http://172.17.0.1:3000/",
-    "documentation": "https://docs.teslamate.org/docs/installation/docker/"
+    "homepage": "http://teslamatedappnode.public.dappnode:4000",
+    "grafana": "http://grafana.teslamatedappnode.public.dappnode:3000"
   },
+  "mainService": "teslamate",
   "license": "GPL-3.0"
 }
