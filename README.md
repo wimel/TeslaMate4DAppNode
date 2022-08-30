@@ -7,8 +7,8 @@ To thank him for his work, consider [making a donation](https://www.paypal.com/d
 
 - Release hash :
 
-/ipfs/QmWaDxiHuqxE9ChnMJNLpQP9JnX8pqpPgdwjfQp8ze8HYF
+/ipfs/QmWTvt7f4nc6VQ1NQxr6towzbckgTDcYBaXPV9yFrfVNKL
 
 - Link to install:
 
-http://my.dappnode/#/installer/%2Fipfs%2FQmWaDxiHuqxE9ChnMJNLpQP9JnX8pqpPgdwjfQp8ze8HYF
+http://my.dappnode/#/installer/%2Fipfs%2FQmWTvt7f4nc6VQ1NQxr6towzbckgTDcYBaXPV9yFrfVNKL
